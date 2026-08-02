@@ -1,0 +1,184 @@
+/*==============================
+    COLLECTION HERO
+==============================*/
+
+.collection-hero{
+    height:45vh;
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../assets/images/collection-banner.jpeg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+    margin-top:90px;
+}
+
+.collection-hero h1{
+    font-size:4rem;
+    font-family:'Cormorant Garamond',serif;
+    margin-bottom:15px;
+}
+
+.collection-hero p{
+    font-size:18px;
+    max-width:600px;
+}
+
+/*==============================
+    SEARCH
+==============================*/
+
+.search-section{
+    padding:60px 8% 30px;
+}
+
+.search-box{
+    max-width:650px;
+    margin:auto;
+    background:#fff;
+    border-radius:50px;
+    padding:18px 25px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.search-box i{
+    color:#999;
+}
+
+.search-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    font-size:16px;
+    background:transparent;
+}
+
+/*==============================
+    FILTER
+==============================*/
+
+.filter-section{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    padding:20px 8% 70px;
+}
+
+.filter-section button{
+    padding:12px 28px;
+    border:none;
+    border-radius:40px;
+    background:#fff;
+    cursor:pointer;
+    transition:.35s;
+    font-weight:500;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+.filter-section button:hover,
+.filter-section .active{
+    background:#C9A45C;
+    color:#fff;
+}
+
+/*==============================
+    PRODUCTS
+==============================*/
+
+.products{
+    padding:0 8% 120px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:35px;
+}
+
+.product-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+}
+
+.product-card img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.product-card:hover img{
+    transform:scale(1.05);
+}
+
+.product-info{
+    padding:25px;
+}
+
+.product-info h3{
+    font-size:2rem;
+    font-family:'Cormorant Garamond',serif;
+    margin-bottom:10px;
+}
+
+.product-info p{
+    color:#777;
+    margin-bottom:15px;
+}
+
+.product-info span{
+    display:block;
+    font-size:22px;
+    color:#C9A45C;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.product-btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:#111;
+    color:#fff;
+    border-radius:40px;
+    transition:.35s;
+}
+
+.product-btn:hover{
+    background:#C9A45C;
+}
+
+/*==============================
+    RESPONSIVE
+==============================*/
+
+@media(max-width:768px){
+
+.collection-hero h1{
+    font-size:2.8rem;
+}
+
+.collection-hero p{
+    font-size:15px;
+}
+
+.search-box{
+    padding:15px 20px;
+}
+
+.product-card img{
+    height:340px;
+}
+
+}

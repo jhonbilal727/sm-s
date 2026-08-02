@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Inter", "Segoe UI", sans-serif;
+    background: #ffffff;
+    color: #111827;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   Start Screen
+========================= */
+
+.start-screen {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    z-index: 10;
+}
+
+
+.start-card {
+    width: 420px;
+    padding: 45px;
+    background: #ffffff;
+    border-radius: 28px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+}
+
+
+.start-card h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+
+.start-card p {
+    color: #6b7280;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+
+.start-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 16px;
+    padding: 15px 25px;
+    transition: 0.3s ease;
+}
+
+
+button:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+
+#playBtn {
+    background: #111827;
+    color: white;
+}
+
+
+#resetBtn {
+    background: #f3f4f6;
+    color: #111827;
+}
+
+
+
+/* =========================
+   Main Game Layout
+========================= */
+
+.game-container {
+    display: none;
+    min-height: 100vh;
+    padding: 35px;
+}
+
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+
+.game-header h1 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+
+.game-header p {
+    color: #6b7280;
+    margin-top: 5px;
+}
+
+
+#restartBtn {
+    background: #111827;
+    color: white;
+}
+
+
+
+/* =========================
+   Game Layout
+========================= */
+
+.game-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 30px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+
+/* Battle Area */
+
+.battle-area {
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.07);
+}
+
+
+.players {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.player-box {
+    text-align: center;
+}
+
+
+.player-box h2 {
+    margin-bottom: 20px;
+}
+
+
+.choice-display {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    background: #f9fafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.04);
+}
+
+
+.vs {
+    font-size: 30px;
+    font-weight: 800;
+    color: #9ca3af;
+}
+
+/* =========================
+   Result Area
+========================= */
+
+.result-area {
+    text-align: center;
+    margin: 40px 0;
+}
+
+
+.result-area h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+.result-area p {
+    color: #6b7280;
+}
+
+
+
+/* Choice Buttons */
+
+.choice-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.choice-btn {
+    width: 150px;
+    height: 130px;
+    background: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 45px;
+    border-radius: 25px;
+}
+
+
+.choice-btn span {
+    font-size: 16px;
+    color: #374151;
+}
+
+
+.choice-btn:hover {
+    background: #f3f4f6;
+}
+
+
+
+/* =========================
+   Score Panel
+========================= */
+
+.score-panel {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.07);
+}
+
+
+.score-panel h2 {
+    margin-bottom: 25px;
+}
+
+
+.score-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+
+.score-item span {
+    color: #6b7280;
+}
+
+
+.score-item strong {
+    font-size: 22px;
+}
+
+
+.divider {
+    height: 1px;
+    background: #e5e7eb;
+    margin: 15px 0;
+}
+
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+
+.stat-box {
+    background: #f9fafb;
+    border-radius: 18px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.stat-box span {
+    display: block;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+.stat-box strong {
+    display: block;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+
+.status-box {
+    background: #f9fafb;
+    padding: 18px;
+    border-radius: 18px;
+    margin: 20px 0;
+}
+
+
+.status-box span {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+.status-box p {
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+
+#pauseBtn {
+    width: 100%;
+    background: #111827;
+    color: white;
+}
+
+
+
+/* =========================
+   Game Over Screen
+========================= */
+
+.game-over {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(255,255,255,0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+
+.game-over-card {
+    background: white;
+    padding: 45px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+}
+
+
+.game-over-card h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+.game-over-card p {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+
+#playAgainBtn {
+    background: #111827;
+    color: white;
+}
+
+
+
+/* =========================
+   Animations
+========================= */
+
+.win {
+    animation: winEffect 0.6s ease;
+}
+
+
+.lose {
+    animation: loseEffect 0.6s ease;
+}
+
+
+.draw {
+    animation: drawEffect 0.6s ease;
+}
+
+
+@keyframes winEffect {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes loseEffect {
+
+    0%,100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+}
+
+
+@keyframes drawEffect {
+
+    0%,100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+}
+
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width: 900px) {
+
+    .game-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .players {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+
+    .choice-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .choice-btn {
+        width: 90%;
+    }
+
+}
+
+
+@media(max-width:500px) {
+
+    .game-container {
+        padding: 20px;
+    }
+
+
+    .start-card {
+        width: 90%;
+        padding: 30px;
+    }
+
+
+    .start-card h1 {
+        font-size: 32px;
+    }
+
+
+    .game-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+}

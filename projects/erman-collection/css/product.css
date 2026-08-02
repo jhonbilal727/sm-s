@@ -1,0 +1,165 @@
+/*==============================
+        PRODUCT PAGE
+==============================*/
+
+.product-page{
+    padding:140px 8% 100px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+/*==============================
+        PRODUCT IMAGE
+==============================*/
+
+.product-image{
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+}
+
+.product-image img{
+    width:100%;
+    display:block;
+    transition:.5s;
+}
+
+.product-image:hover img{
+    transform:scale(1.05);
+}
+
+/*==============================
+        PRODUCT DETAILS
+==============================*/
+
+.category{
+    color:#C9A45C;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.product-details h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:4rem;
+    margin:15px 0;
+}
+
+.product-details h2{
+    color:#C9A45C;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.product-details p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.product-details h4{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+/*==============================
+        SIZE BUTTONS
+==============================*/
+
+.sizes{
+    display:flex;
+    gap:15px;
+    margin-bottom:35px;
+}
+
+.sizes button{
+    width:55px;
+    height:55px;
+    border:1px solid #ddd;
+    background:#fff;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:16px;
+}
+
+.sizes button:hover{
+    background:#111;
+    color:#fff;
+    border-color:#111;
+}
+
+/*==============================
+        QUANTITY
+==============================*/
+
+.product-details input{
+    width:100px;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    margin-bottom:35px;
+    font-size:16px;
+}
+
+/*==============================
+        BUTTONS
+==============================*/
+
+.product-buttons{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.buy-btn{
+    padding:18px 45px;
+    background:#111;
+    color:#fff;
+    border-radius:50px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.buy-btn:hover{
+    background:#C9A45C;
+}
+
+.wish-btn{
+    width:60px;
+    height:60px;
+    border:none;
+    background:#f4f4f4;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:20px;
+    transition:.3s;
+}
+
+.wish-btn:hover{
+    background:#C9A45C;
+    color:#fff;
+}
+
+/*==============================
+        RESPONSIVE
+==============================*/
+
+@media(max-width:900px){
+
+.product-page{
+
+    grid-template-columns:1fr;
+    gap:40px;
+
+}
+
+.product-details h1{
+
+    font-size:3rem;
+
+}
+
+}

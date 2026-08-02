@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snake Modern Edition</title>
+
+    <link rel="icon" type="image/png" href="assets/game.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="app">
+
+
+    <!-- Start Menu -->
+    <section class="start-screen" id="startScreen">
+
+        <h1 class="game-title">
+            Snake
+        </h1>
+
+        <p class="subtitle">
+            Modern Edition
+        </p>
+
+
+        <div class="menu-buttons">
+
+            <button id="playButton">
+                Play Game
+            </button>
+
+
+            <button id="resetScoreButton">
+                Reset Score
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Game Screen -->
+    <section class="game-screen hidden" id="gameScreen">
+
+
+        <!-- Game Board -->
+        <div class="board-container">
+
+            <div id="gameBoard" class="game-board">
+                <!-- Snake cells created by JavaScript -->
+            </div>
+
+        </div>
+
+
+
+
+        <!-- Score Panel -->
+        <aside class="score-panel">
+
+
+            <h2>
+                Snake
+            </h2>
+
+
+
+            <div class="score-box">
+
+
+                <div class="stat">
+                    <span>Score</span>
+                    <strong id="score">0</strong>
+                </div>
+
+
+
+                <div class="stat">
+                    <span>High Score</span>
+                    <strong id="highScore">0</strong>
+                </div>
+
+
+
+                <div class="stat">
+                    <span>Level</span>
+                    <strong id="level">1</strong>
+                </div>
+
+
+
+                <div class="stat">
+                    <span>Status</span>
+                    <strong id="status">Ready</strong>
+                </div>
+
+
+            </div>
+
+
+
+            <!-- New Pause Button -->
+            <button id="pauseButton">
+                Pause
+            </button>
+
+
+
+        </aside>
+
+
+    </section>
+
+
+
+
+
+    <!-- Game Over Screen -->
+
+    <section class="game-over hidden" id="gameOverScreen">
+
+
+        <h2>
+            Game Over
+        </h2>
+
+
+        <p>
+            Your snake has stopped!
+        </p>
+
+
+        <button id="restartButton">
+            Restart Game
+        </button>
+
+
+    </section>
+
+
+
+
+</main>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
