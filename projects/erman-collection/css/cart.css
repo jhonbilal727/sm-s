@@ -1,0 +1,172 @@
+/*==============================
+        CART PAGE
+==============================*/
+
+.cart-page{
+
+    padding:140px 8% 100px;
+
+}
+
+.cart-page h1{
+
+    text-align:center;
+    font-size:3.5rem;
+    font-family:'Cormorant Garamond',serif;
+    margin-bottom:60px;
+
+}
+
+.cart-container{
+
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+
+}
+
+.cart-item{
+
+    display:flex;
+    align-items:center;
+    gap:25px;
+    padding:25px;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    margin-bottom:25px;
+
+}
+
+.cart-item img{
+
+    width:140px;
+    border-radius:15px;
+
+}
+
+.cart-info{
+
+    flex:1;
+
+}
+
+.cart-info h3{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:2rem;
+
+}
+
+.cart-info p{
+
+    color:#777;
+    margin:10px 0;
+
+}
+
+.cart-info span{
+
+    color:#C9A45C;
+    font-size:22px;
+    font-weight:bold;
+
+}
+
+.cart-item input{
+
+    width:70px;
+    padding:10px;
+
+}
+
+.remove-btn{
+
+    border:none;
+    background:#111;
+    color:#fff;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.remove-btn:hover{
+
+    background:#C9A45C;
+
+}
+
+/* SUMMARY */
+
+.cart-summary{
+
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    height:fit-content;
+
+}
+
+.cart-summary h2{
+
+    font-family:'Cormorant Garamond',serif;
+    margin-bottom:30px;
+
+}
+
+.summary-row{
+
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+
+}
+
+.total{
+
+    font-size:22px;
+    font-weight:bold;
+    border-top:1px solid #ddd;
+    padding-top:20px;
+
+}
+
+.checkout-btn{
+
+    display:block;
+    text-align:center;
+    margin-top:30px;
+    background:#111;
+    color:#fff;
+    padding:18px;
+    border-radius:50px;
+    transition:.3s;
+
+}
+
+.checkout-btn:hover{
+
+    background:#C9A45C;
+
+}
+
+@media(max-width:900px){
+
+.cart-container{
+
+grid-template-columns:1fr;
+
+}
+
+.cart-item{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+}

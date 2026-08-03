@@ -1,0 +1,1999 @@
+/* ==========================================
+   SM PORTFOLIO V2
+   PART 1
+========================================== */
+
+/* GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+
+/* RESET */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:#FFD54A;
+
+    font-family:"Fredoka",sans-serif;
+
+    color:#151515;
+
+    overflow-x:hidden;
+
+}
+
+/* LINKS */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* LISTS */
+
+ul{
+
+    list-style:none;
+
+}
+
+/* IMAGES */
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+header{
+
+    width:100%;
+
+    position:sticky;
+
+    top:20px;
+
+    z-index:1000;
+
+}
+
+.navbar{
+
+    width:92%;
+
+    margin:auto;
+
+    background:#ffffff;
+
+    border:4px solid #151515;
+
+    border-radius:22px;
+
+    padding:18px 30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:8px 8px 0 #151515;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.nav-links a{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#00a8ff;
+
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo{
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:center;
+
+}
+
+.logo-letter{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:18px;
+
+    border:4px solid #151515;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+    box-shadow:5px 5px 0 #151515;
+
+}
+
+.logo-letter:hover{
+
+    transform:translateY(-6px) rotate(-6deg);
+
+}
+
+.yellow-box{
+
+    background:#FFD54A;
+
+}
+
+.blue-box{
+
+    background:#67D8FF;
+
+    color: white;
+
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+    width:92%;
+
+    margin:80px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:60px;
+
+    min-height:90vh;
+
+}
+
+.hello{
+
+    font-size:26px;
+
+    margin-bottom:15px;
+
+}
+
+.main-title{
+
+    font-size:120px;
+
+    line-height:1;
+
+}
+
+.yellow-text{
+
+    color:#f4b400;
+
+}
+
+.blue-text{
+
+    color:#00b8ff;
+
+}
+
+.hero h2{
+
+    margin-top:20px;
+
+    font-size:42px;
+
+}
+
+.hero-text{
+
+    margin-top:20px;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    max-width:600px;
+
+}
+
+/* BUTTON */
+
+.primary-btn{
+
+    margin-top:35px;
+
+    padding:18px 30px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#151515;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/* BADGES */
+
+.skill-badges{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-top:40px;
+
+}
+
+.badge{
+
+    background:white;
+
+    border:3px solid #151515;
+
+    border-radius:14px;
+
+    padding:12px 20px;
+
+    font-weight:600;
+
+    box-shadow:5px 5px 0 #151515;
+
+    transition:.3s;
+
+}
+
+.badge:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/* HERO RIGHT */
+
+.hero-right{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ==========================================
+   PLAYER CARD
+========================================== */
+
+.player-card{
+
+    width:340px;
+
+    background:#ffffff;
+
+    border:5px solid #151515;
+
+    border-radius:30px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:12px 12px 0 #151515;
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+.player-logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:25px;
+
+}
+
+.player-card h2{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.player-card p{
+
+    font-size:18px;
+
+    margin-bottom:25px;
+
+}
+
+/* XP BAR */
+
+.xp{
+
+    margin-top:25px;
+
+}
+
+.xp span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:700;
+
+}
+
+.xp-bar{
+
+    width:100%;
+
+    height:16px;
+
+    border:3px solid #151515;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+}
+
+/* ==========================
+   XP BAR
+========================== */
+
+.xp-bar{
+
+    width:100%;
+    height:12px;
+
+    margin-top:12px;
+
+    border-radius:100px;
+
+    background:#1f1f1f;
+
+    overflow:hidden;
+
+    border:2px solid rgba(255,255,255,.08);
+
+}
+
+.xp-fill{
+
+    width:0%;
+
+    height:100%;
+
+    border-radius:100px;
+
+    background:linear-gradient(
+        90deg,
+        #0070F3 0%,
+        #0099FF 50%,
+        #00C6FF 100%
+    );
+
+    box-shadow:
+        0 0 10px rgba(0,112,243,.6),
+        0 0 25px rgba(0,198,255,.5);
+
+    transition:width 1.8s ease;
+
+}
+
+/* ==========================================
+   FLOATING TECH CARDS
+========================================== */
+
+.floating-card{
+
+    position:absolute;
+
+    background:white;
+
+    border:3px solid #151515;
+
+    border-radius:18px;
+
+    padding:12px 18px;
+
+    font-weight:600;
+
+    box-shadow:5px 5px 0 #151515;
+
+    animation:float 5s ease-in-out infinite;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+    will-change:transform;
+
+}
+
+.floating-card:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:10px 10px 0 #151515;
+
+}
+
+/* Positions */
+
+.html-card{
+
+    top:30px;
+
+    left:-40px;
+
+}
+
+.css-card{
+
+    top:180px;
+
+    right:-50px;
+
+    animation-delay:1s;
+
+}
+
+.js-card{
+
+    bottom:140px;
+
+    left:-60px;
+
+    animation-delay:2s;
+
+}
+
+.unity-card{
+
+    bottom:30px;
+
+    right:-30px;
+
+    animation-delay:1.5s;
+
+}
+
+.blender-card{
+
+    top:90px;
+
+    right:-90px;
+
+    animation-delay:.5s;
+
+}
+
+.vscode-card{
+
+    bottom:230px;
+
+    left:-80px;
+
+    animation-delay:2.5s;
+
+}
+
+/* ==========================================
+   SECTION TITLE
+========================================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:48px;
+
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    font-size:20px;
+
+}
+
+/* ==========================================
+   PROJECTS
+========================================== */
+
+.projects{
+
+    width:92%;
+
+    margin:120px auto;
+
+}
+
+.project-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.project-card{
+
+    background:white;
+
+    border:4px solid #151515;
+
+    border-radius:25px;
+
+    padding:25px;
+
+    box-shadow:8px 8px 0 #151515;
+
+    transition:.35s;
+
+}
+
+.project-card:hover{
+
+    transform: translateY(-12px) rotate(-1deg);
+    box-shadow: 12px 12px 0 #151515;
+
+}
+
+.project-image{
+
+    height:180px;
+
+    border-radius:20px;
+
+    background:#FFD54A;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+.tech-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+.tech-list span{
+
+    background:#67D8FF;
+
+    padding:8px 14px;
+
+    border-radius:12px;
+
+    font-size:14px;
+
+}
+
+/* ==========================================
+   SKILLS
+========================================== */
+
+.skills{
+
+    width:92%;
+
+    margin:120px auto;
+
+}
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.skill-box{
+
+    background:white;
+
+    border:4px solid #151515;
+
+    border-radius:22px;
+
+    padding:30px;
+
+    text-align:center;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    box-shadow:8px 8px 0 #151515;
+
+    transition:.3s;
+
+}
+
+.skill-box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* ==========================================
+   GAMES
+========================================== */
+
+.games{
+
+    width:92%;
+
+    margin:120px auto;
+
+}
+
+.games-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.game-card{
+
+    background:white;
+
+    border:4px solid #151515;
+
+    border-radius:24px;
+
+    padding:40px 20px;
+
+    text-align:center;
+
+    font-size:50px;
+
+    box-shadow:8px 8px 0 #151515;
+
+    transition:.3s;
+
+}
+
+.game-card h3{
+
+    font-size:22px;
+
+    margin-top:20px;
+
+}
+
+.game-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    margin-top:120px;
+
+    padding:60px 20px;
+
+    text-align:center;
+
+}
+
+.footer-logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:25px;
+
+}
+
+footer p{
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+footer small{
+
+    display:block;
+
+    margin-top:15px;
+
+    font-size:16px;
+
+    opacity:.7;
+
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:900px){
+
+    .hero{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .project-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .skills-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .games-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .hero-right{
+
+        margin-top:60px;
+
+    }
+
+}
+
+/*==============================
+NEW HERO LOGO
+==============================*/
+
+.hero-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+
+    margin:25px 0;
+
+}
+
+.logo-box{
+
+    width:170px;
+
+    height:170px;
+
+    border-radius:35px;
+
+    border:5px solid #151515;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:"Rubik Mono One",sans-serif;
+
+    font-size:80px;
+
+    box-shadow:10px 10px 0 #151515;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.hero-logo:hover .logo-s{
+
+    transform:translateY(-12px) rotate(-8deg);
+
+}
+
+.hero-logo:hover .logo-m{
+
+    transform:translateY(-12px) rotate(8deg);
+
+}
+
+.hero-logo:hover .logo-lightning{
+
+    transform:scale(1.25);
+
+}
+
+.logo-s{
+
+    background:#FFC107;
+
+    color:#151515;
+
+}
+
+.logo-m{
+
+    background:#00B5FF;
+
+    color:white;
+
+}
+
+.brand-tagline{
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:26px;
+
+    font-weight:600;
+
+    margin-top:15px;
+
+    letter-spacing:2px;
+
+}
+
+/*==============================
+LIGHTNING
+==============================*/
+
+.logo-lightning{
+
+    font-size:70px;
+
+    color:#ff9800;
+
+    animation:lightning 1.8s infinite;
+
+    user-select:none;
+
+}
+
+@keyframes lightning{
+
+    0%{
+
+        transform:translateY(0) rotate(0deg);
+
+    }
+
+    25%{
+
+        transform:translateY(-8px) rotate(-8deg);
+
+    }
+
+    50%{
+
+        transform:translateY(0) scale(1.15);
+
+    }
+
+    75%{
+
+        transform:translateY(-6px) rotate(8deg);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@media (max-width: 900px) {
+    /* Pin the navbar to the bottom of the screen on mobile */
+    header {
+        position: fixed;
+        bottom: 15px;
+        top: auto;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .navbar {
+        width: 90%;
+        padding: 8px 16px !important; /* Reduces top and bottom spacing */
+        min-height: unset !important;
+        flex-direction: row;
+        justify-content: space-around;
+        box-shadow: 4px 4px 0 #151515;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    /* Scale down main hero titles for smaller screens */
+    .main-title {
+        font-size: 64px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero-text {
+        font-size: 18px;
+    }
+
+    .logo-box {
+        width: 120px;
+        height: 120px;
+        font-size: 55px;
+        border-radius: 25px;
+        box-shadow: 6px 6px 0 #151515;
+    }
+
+    .hero-logo {
+        gap: 12px;
+        justify-content: center;
+    }
+
+    .logo-lightning {
+        font-size: 45px;
+    }
+}
+
+/* ==========================================
+   DARK MODE STYLES
+   ========================================== */
+
+/* The switch button */
+.dark-toggle-btn {
+    background: white;
+    border: 3px solid #151515;
+    border-radius: 12px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 0 #151515;
+    transition: .3s;
+}
+
+.dark-toggle-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Colors when Dark Mode is active */
+body.dark-mode {
+    background: #151515;
+    color: #ffffff;
+}
+
+/* Change card backgrounds and text colors in dark mode */
+body.dark-mode .navbar,
+body.dark-mode .project-card,
+body.dark-mode .skill-box,
+body.dark-mode .game-card,
+body.dark-mode .player-card,
+body.dark-mode .badge,
+body.dark-mode .floating-card,
+body.dark-mode .dark-toggle-btn {
+    background: #222222;
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 8px 8px 0 #ffffff;
+}
+
+body.dark-mode .xp-bar {
+    background: #222222;
+    border-color: #ffffff;
+}
+
+body.dark-mode .logo-box {
+    border-color: white !important; /* Change this to any color code you like */
+    box-shadow: 8px 8px 0 white !important;
+}
+
+body.dark-mode .logo-letter {
+    border-color: #ffffff !important;
+    box-shadow: 4px 4px 0 #ffffff !important;
+}
+
+body.dark-mode .yellow-box {
+    color: black;
+}
+
+body.dark-mode .primary-btn {
+    background-color: white;
+    color: black;
+}
+
+/* Fix mobile navbar shadow in dark mode if active */
+@media (max-width: 900px) {
+    body.dark-mode .navbar {
+        box-shadow: 4px 4px 0 #ffffff;
+    }
+    body.dark-mode .dark-toggle-btn {
+        box-shadow: 3px 3px 0 #ffffff;
+    }
+}
+
+.navbar .logo-box, 
+.navbar .logo-letter {
+    width: 60px !important;
+    height: 60px !important;
+    font-size: 50px !important;
+}
+
+.navbar ul, 
+.navbar .nav-links {
+    gap: 12px !important; /* Reduces space between Home, Projects, etc. */
+}
+
+.navbar .dark-toggle-btn {
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 15px !important;
+}
+
+/*==============================
+HERO REVEAL ANIMATION
+==============================*/
+
+.reveal{
+    opacity:0;
+}
+
+.reveal.active{
+    animation: revealUp .8s ease forwards;
+}
+
+@keyframes revealUp{
+
+    from{
+        opacity:0;
+        transform:translateY(60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ==========================
+   HERO ENTRANCE
+========================== */
+
+.hero-left{
+
+    animation:slideLeft 1s ease;
+
+}
+
+.hero-right{
+
+    animation:slideRight 1s ease;
+
+}
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+        transform:translateX(-80px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes slideRight{
+
+    from{
+
+        opacity:0;
+        transform:translateX(80px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+.skill-badges .badge{
+
+    opacity:0;
+
+    animation:popIn .5s forwards;
+
+}
+
+.skill-badges .badge:nth-child(1){animation-delay:.6s;}
+.skill-badges .badge:nth-child(2){animation-delay:.8s;}
+.skill-badges .badge:nth-child(3){animation-delay:1s;}
+.skill-badges .badge:nth-child(4){animation-delay:1.2s;}
+.skill-badges .badge:nth-child(5){animation-delay:1.4s;}
+
+@keyframes popIn{
+
+    from{
+
+        opacity:0;
+        transform:scale(.5);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+/*==============================
+SCROLL PROGRESS BAR
+==============================*/
+
+.scroll-progress{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:0%;
+
+    height:6px;
+
+    background:linear-gradient(
+        90deg,
+        #FFC107,
+        #00B5FF
+    );
+
+    z-index:9999;
+
+    transition:width .1s linear;
+
+}
+
+.nav-links a.active{
+
+    color:#00B5FF;
+
+    position:relative;
+
+}
+
+.nav-links a.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:100%;
+    height:3px;
+
+    background:#00B5FF;
+
+    border-radius:20px;
+
+}
+
+/*==============================
+LOADING SCREEN
+==============================*/
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#FFD54A;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999999;
+
+    transition:opacity .8s ease,
+               visibility .8s ease;
+
+}
+
+body.dark-mode #loader{
+
+    background:#151515;
+
+}
+
+.loader-logo{
+
+    display:flex;
+
+    gap:22px;
+
+}
+
+.loader-box{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:28px;
+
+    border:5px solid #151515;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:"Rubik Mono One",sans-serif;
+
+    font-size:60px;
+
+    box-shadow:8px 8px 0 #151515;
+
+    animation:loaderBounce 1s infinite alternate;
+
+}
+
+.loader-box.blue-box{
+
+    animation-delay:.2s;
+
+}
+
+body.dark-mode .loader-box{
+
+    border-color:white;
+
+    box-shadow:8px 8px 0 white;
+
+}
+
+.loading-text{
+
+    margin-top:35px;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+    animation:pulse 1.2s infinite;
+
+}
+
+.loader-hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
+
+@keyframes loaderBounce{
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+    to{
+
+        transform:translateY(-18px);
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        opacity:.4;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:.4;
+
+    }
+
+}
+
+/* ==========================================
+   NAVBAR SEARCH BAR STYLES
+   ========================================== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-search-container {
+    flex: 1;
+    max-width: 350px;
+    margin: 0 20px;
+}
+
+.nav-search-input {
+    width: 100%;
+    padding: 8px 14px;
+    background: #ffffff;
+    border: 3px solid #151515;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    color: #151515;
+    box-shadow: 3px 3px 0 #151515;
+    outline: none;
+    transition: 0.2s;
+}
+
+.nav-search-input:focus {
+    transform: translateY(-2px);
+    box-shadow: 5px 5px 0 #151515;
+}
+
+.nav-search-input::placeholder {
+    color: #777777;
+    font-weight: 500;
+}
+
+/* Dark mode compatibility for the search bar */
+body.dark-mode .nav-search-input {
+    background: #222222 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    box-shadow: 3px 3px 0 #ffffff !important;
+}
+
+body.dark-mode .nav-search-input:focus {
+    box-shadow: 5px 5px 0 #ffffff !important;
+}
+
+body.dark-mode .nav-search-input::placeholder {
+    color: #aaaaaa;
+}
+
+/* ==========================================
+   NEO-BRUTALIST TOGGLE SWITCH STYLES
+   ========================================== */
+
+.switch-container {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.switch-container input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ffffff;
+    border: 3px solid #151515;
+    border-radius: 20px;
+    box-shadow: 3px 3px 0 #151515;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slider-icon {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 2px;
+    background-color: #FFD54A;
+    border: 2px solid #151515;
+    border-radius: 50%;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+/* Checked state (Dark Mode Active) */
+input:checked + .slider {
+    background-color: #222222;
+    border-color: #ffffff;
+    box-shadow: 3px 3px 0 #ffffff;
+}
+
+input:checked + .slider .slider-icon {
+    transform: translateX(28px);
+    background-color: #151515;
+    border-color: #ffffff;
+}
+
+/* Dark mode compatibility for the switch container background */
+body.dark-mode .slider {
+    background-color: #222222;
+    border-color: #ffffff;
+    box-shadow: 3px 3px 0 #ffffff;
+}
+
+/* ==========================================
+   MUSIC PLAYER WIDGET STYLES
+   ========================================== */
+
+.music-player-widget {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 10px;
+}
+
+.music-btn, .music-next-btn {
+    background: #ffffff;
+    border: 3px solid #151515;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: bold;
+    color: #151515;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #151515;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.music-btn:hover, .music-next-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 5px 5px 0 #151515;
+    background: #FFD54A;
+}
+
+.music-next-btn {
+    padding: 6px 8px;
+}
+
+/* Dark mode compatibility */
+body.dark-mode .music-btn, 
+body.dark-mode .music-next-btn {
+    background: #222222 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    box-shadow: 3px 3px 0 #ffffff !important;
+}
+
+body.dark-mode .music-btn:hover, 
+body.dark-mode .music-next-btn:hover {
+    background: #ffffff !important;
+    color: #151515 !important;
+}
+
+/* ==========================================
+   NEO-BRUTALIST MODAL STYLES
+   ========================================== */
+
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 21, 21, 0.85); /* Dark transparent backdrop */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background: #ffffff;
+    border: 4px solid #151515;
+    border-radius: 12px;
+    box-shadow: 8px 8px 0 #151515;
+    width: 100%;
+    max-width: 900px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: modalPop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes modalPop {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.modal-header {
+    background: #FFD54A;
+    padding: 12px 20px;
+    border-bottom: 4px solid #151515;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #151515;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.modal-action-btn {
+    background: #ffffff;
+    border: 2px solid #151515;
+    border-radius: 6px;
+    width: 32px;
+    height: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s;
+}
+
+.modal-action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 0 #151515;
+}
+
+.modal-action-btn.close-btn {
+    background: #FF5722;
+    color: #ffffff;
+}
+
+.modal-body {
+    flex-grow: 1;
+    background: #151515;
+}
+
+#game-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #000000;
+}
+
+/* Fullscreen mode class applied via JS */
+.modal-content.fullscreen-mode {
+    max-width: 100% !important;
+    height: 100vh !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Dark mode support for modal header */
+body.dark-mode .modal-content {
+    background: #222222;
+    border-color: #ffffff;
+    box-shadow: 8px 8px 0 #ffffff;
+}
+
+body.dark-mode .modal-header {
+    background: #151515;
+    border-bottom-color: #ffffff;
+}
+
+body.dark-mode .modal-title {
+    color: #ffffff;
+}
+
+body.dark-mode .modal-action-btn {
+    background: #333333;
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 2px 2px 0 #ffffff;
+}
+
+/* Perfect scaling for fixed-size games inside the modal */
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hides any overflow from scaling */
+}
+
+#game-iframe {
+    width: 800px;  /* Matches your game's intended desktop layout width */
+    height: 700px; /* Matches your game's intended height */
+    border: none;
+    background: #ffffff;
+    transform: scale(0.7); /* Scales it down cleanly */
+    transform-origin: center center;
+}
+
+/* Ensure all game cards share a uniform, balanced size and style */
+.game-card, .project-card { /* Adjust selector to match your portfolio's card class */
+    background: #ffffff;
+    border: 3px solid #111;
+    border-radius: 20px;
+    padding: 25px;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 5px 5px 0px #111; /* Neobrutalist hard shadow style */
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.game-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0px #111;
+}
+
+.game-card {
+    background: #ffffff;
+    border: 3px solid #111;
+    border-radius: 24px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 6px 6px 0px #111;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.game-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0px #111;
+    background: #fffdf0;
+}
+
+.game-card:active {
+    transform: translate(2px, 2px);
+    box-shadow: 3px 3px 0px #111;
+}
+
+.game-card .game-icon {
+    font-size: 44px;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+.game-card:hover .game-icon {
+    transform: translateY(-4px) scale(1.15) rotate(5deg);
+}
+
+.game-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111;
+}
+
+/* Restrict the icon sizing rules strictly to game cards */
+.games-section .game-card .game-icon, 
+.game-card .game-icon {
+    font-size: 44px;
+    line-height: 1;
+    margin-bottom: 5px; /* Keeps it safely inside the card padding */
+}
+
+
+.project-card {
+    position: relative;
+    background: #ffffff;
+    border: 3px solid #111;
+    border-radius: 24px;
+    width: 280px;
+    height: 360px; /* Uniform height for all three cards */
+    padding: 35px 22px 22px 22px;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes tags to the bottom */
+    box-shadow: 6px 6px 0px #111;
+}
+
+.project-card .card-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.project-card .card-content p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Footer area for the tags so they line up evenly */
+.project-card .card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+/* Tag Pill Style */
+.project-card .tag {
+    background: #38bdf8;
+    color: #111;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 2px solid #111;
+}
+
+/* On desktop, keep your layout looking normal */
+.mobile-top-cluster {
+    display: contents; /* Makes the wrapper invisible on desktop so items stay in your horizontal bar */
+}
+
+@media (max-width: 768px) {
+    /* On mobile, make the cluster appear at the absolute top */
+    .mobile-top-cluster {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        order: -10; /* Forces it to the very beginning of the page flow */
+        margin-bottom: 15px;
+    }
+
+    /* Make sure your main container allows reordering */
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    /* 1. Target your main navigation wrapper box */
+    .nav-container, .navbar, .nav-links { /* Use the exact class name of your main white wrapper box */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 2. Force the Search Bar to the very top */
+    .nav-search-container {
+        order: -3;
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    /* 3. Force the Music Player right below the search bar */
+    .music-player-widget {
+        order: -2;
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+
+    /* 4. Keep your logo (SM) and links below them */
+    .logo-container { /* or whatever class your SM logo has */
+        order: -1;
+    }
+}

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>SM</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo (1).png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================
+     LOADING SCREEN
+========================== -->
+
+<div id="loader">
+
+    <div class="loader-logo">
+
+        <div class="loader-box yellow-box">S</div>
+
+        <div class="loader-box blue-box">M</div>
+
+    </div>
+
+    <p class="loading-text">
+        Loading...
+    </p>
+
+</div>
+
+    <div class="scroll-progress"></div>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header>
+
+        <nav class="navbar reveal">
+
+            <div class="logo">
+
+                <div class="logo-letter yellow-box">
+                    S
+                </div>
+
+                <div class="logo-letter blue-box">
+                    M
+                </div>
+
+            </div>
+
+            <!-- Wrap them together at the very top of your header/nav -->
+<div class="mobile-top-cluster">
+    <div class="nav-search-container">
+        <input type="text" id="site-search" placeholder="Search projects, skills..." class="nav-search-input">
+    </div>
+
+    <!-- MUSIC PLAYER WIDGET -->
+    <div class="music-player-widget">
+        <button id="music-toggle-btn" class="music-btn" title="Play Music">🎵 <span id="current-song-name">Fairytale</span></button>
+        <button id="next-song-btn" class="music-next-btn" title="Next Song">⏭️</button>
+    </div>
+</div>
+
+            <ul class="nav-links">
+                <!-- Dark Mode Toggle Button -->
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#skills">Skills</a></li>
+
+                <li><a href="#games">Games</a></li>
+
+                <label class="switch-container" title="Toggle Dark Mode">
+    <input type="checkbox" id="dark-mode-toggle">
+    <span class="slider">
+        <span class="slider-icon">🌙</span>
+    </span>
+</label>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section id="home" class="hero">
+
+        <!-- LEFT -->
+
+        <div class="hero-left reveal">
+
+            <p class="hello">
+                  Hi, I'm
+            </p>
+
+            <div class="hero-logo">
+
+    <div class="logo-box logo-s">
+        S
+    </div>
+
+    <div class="logo-box logo-m">
+        M
+    </div>
+
+</div>
+
+<p class="brand-tagline">
+    Code • Create • Play
+</p>
+
+            <h2>
+                Creative Web & Game Developer
+            </h2>
+
+            <p class="hero-text">
+
+                I build modern websites,
+                interactive experiences,
+                and beginner game projects
+                while learning every day.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="primary-btn">
+
+                    🚀 Explore Projects
+
+                </button>
+
+            </div>
+
+            <!-- Skill Badges -->
+
+            <div class="skill-badges">
+
+                <div class="badge">
+                    🌐 HTML
+                </div>
+
+                <div class="badge">
+                    🎨 CSS
+                </div>
+
+                <div class="badge">
+                    ⚡ JavaScript
+                </div>
+
+                <div class="badge">
+                    🎮 Unity
+                </div>
+
+                <div class="badge">
+                    🐍 Python
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="hero-right reveal">
+
+            <!-- PLAYER CARD -->
+
+            <div class="player-card">
+
+                <div class="player-logo">
+
+                    <div class="logo">
+
+                        <div class="logo-letter yellow-box">
+                            S
+                        </div>
+
+                        <div class="logo-letter blue-box">
+                            M
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <h2>SM</h2>
+
+                <p>
+                    Creative Developer
+                </p>
+
+                <div class="xp">
+
+                    <span>LEVEL 01</span>
+
+                    <div class="xp-bar">
+
+                        <div class="xp-fill"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Floating Tech -->
+
+            <div class="floating-card html-card">
+                🌐 HTML
+            </div>
+
+            <div class="floating-card css-card">
+                🎨 CSS
+            </div>
+
+            <div class="floating-card js-card">
+                ⚡ JavaScript
+            </div>
+
+            <div class="floating-card unity-card">
+                🎮 Unity
+            </div>
+
+            <div class="floating-card blender-card">
+                🟠 Blender
+            </div>
+
+            <div class="floating-card vscode-card">
+                💙 VS Code
+            </div>
+
+        </div>
+
+    </section>
+
+        <!-- =========================
+         PROJECTS
+    ========================== -->
+
+    <section id="projects" class="projects">
+
+        <div class="section-title">
+
+            <h2>🚀 Featured Projects</h2>
+
+            <p>Some of the projects I've built while learning.</p>
+
+        </div>
+
+        <div class="project-grid reveal">
+
+    <div class="project-card reveal">
+
+        <div class="project-image">
+            ☕
+        </div>
+
+        <h3>Blue Bean Cafe</h3>
+
+        <p>
+            A modern coffee shop website with a clean and responsive design.
+        </p>
+
+        <div class="tech-list">
+
+            <span>Coming Soon</span>
+
+        </div>
+
+    </div>
+
+    <div class="project-card reveal">
+
+        <div class="project-image">
+            <a href="projects/erman-collection/index.html">👕</a>
+        </div>
+
+        <h3>Erman Collection</h3>
+
+        <p>
+            Fashion store landing page with product showcase and modern layout.
+        </p>
+
+        <div class="tech-list">
+
+            <span>HTML</span>
+            <span>CSS</span>
+
+        </div>
+
+    </div>
+
+    <div class="project-card reveal">
+
+        <div class="project-image">
+            <a href="https://plusone-hub-educatio-5rm9.bolt.host">➕</a>
+        </div>
+
+        <h3>Math Companion</h3>
+
+        <p>
+            Interactive learning platform for Plus One students.
+        </p>
+
+        <div class="tech-list">
+
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Tailwind</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </section>
+
+
+    <!-- =========================
+         SKILLS
+    ========================== -->
+
+    <section id="skills" class="skills">
+
+        <div class="section-title">
+
+            <h2>💻 Skills</h2>
+
+        </div>
+
+        <div class="skills-grid reveal">
+
+            <div class="skill-box">🌐 HTML</div>
+
+            <div class="skill-box">🎨 CSS</div>
+
+            <div class="skill-box">⚡ JavaScript</div>
+
+            <div class="skill-box">⚛ React</div>
+
+            <div class="skill-box">🎮 Unity</div>
+
+            <div class="skill-box">🐍 Python</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         GAMES
+    ========================== -->
+
+    <section id="games" class="games">
+
+        <div class="section-title">
+
+            <h2>🎮 Mini Games</h2>
+
+            <p>
+                Games built by SM.
+            </p>
+
+        </div>
+
+        <div class="games-grid reveal">
+
+            <div class="games-grid reveal">
+
+    <div class="game-card" onclick="openGameModal('Tic Tac Toe', 'games/tic-tac-toe/index.html')">
+    <div class="game-icon">❌⭕</div>
+    <h3>Tic Tac Toe</h3>
+</div>
+
+    <!-- Snake Game Card -->
+<div class="game-card" onclick="openGameModal('Snake Game', 'games/Snake-Game/index.html')">
+    <div class="game-icon">🐍</div> <!-- Icon added here -->
+    <h3>Snake</h3>                   <!-- Text label -->
+</div>
+
+    <!-- Memory Game Card -->
+<div class="game-card" onclick="openGameModal('Memory Game', 'games/Memory-Game/index.html')">
+    <div class="game-icon">🧠</div>
+    <h3>Memory Game</h3>
+</div>
+
+</div>
+            <!-- Rock Paper Scissors Game Card -->
+<div class="game-card" onclick="openGameModal('Rock Paper Scissors', 'games/Rock-paper/index.html')">
+    <div class="game-icon">✊</div>
+    <h3>Rock Paper Scissors</h3>
+</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="reveal">
+
+        <div class="footer-logo">
+
+            <div class="logo">
+
+                <div class="logo-letter yellow-box">
+                    S
+                </div>
+
+                <div class="logo-letter blue-box">
+                    M
+                </div>
+
+            </div>
+
+        </div>
+
+        <p>
+
+            Designed & Built by SM
+
+        </p>
+
+        <small>
+
+            © 2026 SM Portfolio. All Rights Reserved.
+
+        </small>
+
+    </footer>
+
+
+    <script src="js/ script.js"></script>
+
+    <!-- GAME/APP MODAL CONTAINER -->
+<div id="game-modal" class="modal-overlay">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span id="modal-title" class="modal-title">Game Title</span>
+            <div class="modal-actions">
+                <button id="modal-fullscreen-btn" class="modal-action-btn" title="Go Fullscreen">⛶</button>
+                <button id="modal-close-btn" class="modal-action-btn close-btn" title="Close">✕</button>
+            </div>
+        </div>
+        <div class="modal-body">
+            <!-- The HTML game/app will load inside this iframe -->
+            <iframe id="game-iframe" src="" title="App/Game Preview"></iframe>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rock Paper Scissors - Modern Edition</title>
+
+    <link rel="icon" type="image/png" href="assets/rock.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Start Menu -->
+    <section class="start-screen" id="startScreen">
+
+        <div class="start-card">
+
+            <h1>Rock Paper Scissors</h1>
+            <p>Modern Edition</p>
+
+            <div class="start-buttons">
+                <button id="playBtn">
+                    Play Game
+                </button>
+
+                <button id="resetBtn">
+                    Reset Score
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Main Game -->
+    <main class="game-container" id="gameContainer">
+
+        <!-- Header -->
+        <header class="game-header">
+
+            <div>
+                <h1>Rock Paper Scissors</h1>
+                <p>Modern Edition</p>
+            </div>
+
+            <button id="restartBtn">
+                Restart
+            </button>
+
+        </header>
+
+
+        <!-- Game Content -->
+        <section class="game-layout">
+
+
+            <!-- Battle Area -->
+            <div class="battle-area">
+
+
+                <div class="players">
+
+                    <div class="player-box">
+
+                        <h2>Player</h2>
+
+                        <div class="choice-display" id="playerChoice">
+                            ?
+                        </div>
+
+                    </div>
+
+
+                    <div class="vs">
+                        VS
+                    </div>
+
+
+                    <div class="player-box">
+
+                        <h2>Computer</h2>
+
+                        <div class="choice-display" id="computerChoice">
+                            ?
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="result-area">
+
+                    <h2 id="resultText">
+                        Make your choice
+                    </h2>
+
+                    <p id="roundMessage">
+                        Choose Rock, Paper, or Scissors to start.
+                    </p>
+
+                </div>
+
+
+                <div class="choice-buttons">
+
+                    <button class="choice-btn" data-choice="rock">
+                        🪨
+                        <span>Rock</span>
+                    </button>
+
+                    <button class="choice-btn" data-choice="paper">
+                        📄
+                        <span>Paper</span>
+                    </button>
+
+                    <button class="choice-btn" data-choice="scissors">
+                        ✂️
+                        <span>Scissors</span>
+                    </button>
+
+                </div>
+
+
+            </div>
+
+                        <!-- Score Panel -->
+            <aside class="score-panel">
+
+                <h2>Score Board</h2>
+
+
+                <div class="score-item">
+                    <span>Player Score</span>
+                    <strong id="playerScore">0</strong>
+                </div>
+
+
+                <div class="score-item">
+                    <span>Computer Score</span>
+                    <strong id="computerScore">0</strong>
+                </div>
+
+
+                <div class="divider"></div>
+
+
+                <div class="stats">
+
+                    <div class="stat-box">
+                        <span>Wins</span>
+                        <strong id="wins">0</strong>
+                    </div>
+
+
+                    <div class="stat-box">
+                        <span>Losses</span>
+                        <strong id="losses">0</strong>
+                    </div>
+
+
+                    <div class="stat-box">
+                        <span>Draws</span>
+                        <strong id="draws">0</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="score-item">
+                    <span>Round</span>
+                    <strong id="roundNumber">0</strong>
+                </div>
+
+
+                <div class="status-box">
+
+                    <span>Status</span>
+
+                    <p id="gameStatus">
+                        Ready to play
+                    </p>
+
+                </div>
+
+
+                <button id="pauseBtn">
+                    Pause Game
+                </button>
+
+
+            </aside>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- Game Over Screen -->
+    <section class="game-over" id="gameOverScreen">
+
+        <div class="game-over-card">
+
+            <h1>Game Over</h1>
+
+            <p id="finalMessage">
+                Final Result
+            </p>
+
+            <button id="playAgainBtn">
+                Play Again
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
